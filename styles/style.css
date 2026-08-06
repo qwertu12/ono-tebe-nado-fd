@@ -3,7 +3,11 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px 50px;
-  background-color: whitesmoke;
+}
+
+.header-menu {
+  font-size: 18px;
+  line-height: 100%;
 }
 
 .header__logo-image {
@@ -20,12 +24,17 @@
 }
 
 .header__links-list-item_no-bullit {
-  text-decoration: none;
   list-style: none;
 }
 
+.header__menu-link_active {
+  text-decoration: none;
+}
+
 .address {
-  max-width: 240px;
+  font-size: 18px;
+  line-height: 24.3px;
+  width: 240px;
   justify-self: end;
   font-style: normal;
 }
@@ -39,10 +48,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.main {
-  background-color: whitesmoke;
 }
 
 .cover {
@@ -133,21 +138,21 @@
   padding-top: 180px;
 }
 
-.card_type_film {
+.card_type {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.card_type_book {
+.card_type {
   background-image: url(../images/card-lot-02.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.card_type_picture {
+.card_type {
   background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
   background-position: center;
@@ -164,8 +169,7 @@
 .lots__card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px;
-
+  gap: 25px;
   list-style: none;
 }
 
@@ -220,7 +224,7 @@
   align-items: start;
   max-width: 1052px;
   margin: 0 auto;
-  padding: 120px 47px;
+  padding: 155px 47px 180px;
 }
 
 .about__column {
@@ -262,10 +266,13 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: whitesmoke;
-  height: 180px;
   gap: 155px;
   padding: 0 50px;
+}
+
+.footer__menu {
+  font-size: 18px;
+  line-height: 100%;
 }
 
 .footer__address {
@@ -273,7 +280,9 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 .footer__menu-list {
+  width: 163.9px;
   display: flex;
   flex-direction: column;
   justify-content: center;
