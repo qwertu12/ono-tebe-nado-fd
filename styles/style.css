@@ -275,9 +275,11 @@
 }
 
 .footer__menu {
-  justify-items: center;
   font-size: 18px;
   line-height: 100%;
+  justify-self: center;
+  align-items: center;
+  line-height: 21px;
 }
 
 .footer__address {
